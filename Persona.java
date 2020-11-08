@@ -8,26 +8,38 @@
  * Persona.java: Realizado por Luis Diaz
  *************************************************************************/
 public class Persona {
+	String nombres;
+	String apellidos;
+	int fecha_n;
+	String sexo;
 	
 	
-	String nombre,apellido;
-	int edad;
-	
-
-
-	Persona(){
-		nombre = "";
-		apellido = "";
-		edad = 0;
-		
+	Persona (){
+		nombres = "";
+		apellidos = "";
+		fecha_n = 0;
+		sexo = "";
 		
 	}
 	
-	void agradecer () {
-		
-		System.out.println ("GRACIIIIIIIASSS!!!!");
+	public int Calcular_edad() {
+		int edad;
+		edad= 2020 - fecha_n;
+		return edad;
 	}
+	
+	public String Esmayoredad() {
+		if(Calcular_edad() >= 18)
+			System.out.println("Eres mayor de edad");
+		else
+			System.out.println ("Eres menor de edad");
+		
+		return nombres;
+	}
+
+
 }
+
 
 
 
