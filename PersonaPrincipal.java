@@ -7,18 +7,26 @@
  * Persona.java: Realizado por Luis Diaz
  *************************************************************************/
 public class PersonaPrincipal {
-
+	
 	public static void main (String args[]) {
 		
 		Persona Luis = new Persona();
-		Luis.nombre = "Luis";
-		Luis.edad = 19;
-		Luis.apellido = "Diaz";
-
-		System.out.println ("El profesor de Programación le dijo a Luis que tiene buen rendimiento y el responde:");
-		Luis.agradecer();
-	
+		Luis.nombres = "Luis";
+		Luis.apellidos = "Diaz";
+		Luis.fecha_n = 2001;
+		Luis.sexo = "Masculino";
+		;
+		
+		System.out.println ("Según el año establecido tienes: " + Luis.Calcular_edad());
+		System.out.println (Luis.Esmayoredad());
+		System.out.println (":)");
+		
+		
+		
+		
+		
+		
 	}
-	
-	
+
 }
+
